@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#302f2f"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/jinru" />
+
+        <ImageView
+            android:id="@+id/iv_back_Settings"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_Help"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="使用帮助"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_User_Protocol"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_settings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="用户协议"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ReCharge_Protocol"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_settings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="充值协议"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_Evaluation"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_settings">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="使用评价"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_Feedback"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_settings"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="意见反馈"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_AboutOurs"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_settings"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="关于我们"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/right_xh" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_settings"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="#ef2d2d"
+        android:textSize="15sp" />
+
+</LinearLayout>

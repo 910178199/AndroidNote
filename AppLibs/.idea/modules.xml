@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AppLibs.iml" filepath="$PROJECT_DIR$/AppLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExpandableTextView/ExpandableTextView.iml" filepath="$PROJECT_DIR$/ExpandableTextView/ExpandableTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crashinterception/crashinterception.iml" filepath="$PROJECT_DIR$/crashinterception/crashinterception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crashinterceptions/crashinterceptions.iml" filepath="$PROJECT_DIR$/crashinterceptions/crashinterceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toastutlis/toastutlis.iml" filepath="$PROJECT_DIR$/toastutlis/toastutlis.iml" />
+    </modules>
+  </component>
+</project>

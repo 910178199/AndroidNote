@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rl_popdismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_popVindow">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_popVindow"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:paddingBottom="28dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_totalPay"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="邯郸泊车-停车付费"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_totalPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_QB_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="￥"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_gopay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="5.00"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_QB_money"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/rl_WeChat"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_QB_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/qianbao_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_QB_money"
+                android:text="钱包支付"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cb_QB_money_suer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/xuanzhongzhifufangshi"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="支付方式"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:layout_above="@+id/view_weixin"/>
+        <View
+            android:id="@+id/view_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/rl_WeChat"
+            android:background="#e7e7e7" />
+
+        <RelativeLayout
+            android:id="@+id/rl_WeChat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/rl_AliPay">
+
+            <ImageView
+                android:id="@+id/iv_WeChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/weixin_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_WeChat"
+                android:text="微信支付"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cb_WeChat_suer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/xuanzhongzhifufangshi"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/rl_AliPay"
+            android:background="#e7e7e7" />
+
+        <RelativeLayout
+            android:id="@+id/rl_AliPay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/fl_Pay_Suer"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/iv_AliPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/zhifubao_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_AliPay"
+                android:text="支付宝支付"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cb_AliPay_suer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_oval"
+                android:button="@null"
+                android:clickable="false" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_Pay_Suer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_Pay_Sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_pay_btn"
+                    android:text="立即支付"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_yueka_Pay_Rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/pay_loading"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

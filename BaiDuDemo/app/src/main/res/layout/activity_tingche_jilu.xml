@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="停车记录"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/jinru" />
+
+        <ImageView
+            android:id="@+id/iv_back_TransationDetail"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e7e7e7" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/arrears"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_below="@+id/headline"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#FF1DAB79"
+            android:paddingLeft="21dp"
+            android:text=""
+            android:textColor="#FFB3EBCD"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_background_money"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_arrears_total_money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="欠缴总金额"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_arrears_total_money2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="欠缴总金额"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_amount_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="32dp"
+                        tools:text="500.00" />
+
+                    <TextView
+                        android:id="@+id/tv_unit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textview_12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_amount_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="32dp"
+                        tools:text="500.00" />
+
+                    <TextView
+                        android:id="@+id/tv_unit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textview_12dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_car_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:text="京DJ1234" />
+
+                <TextView
+                    android:id="@+id/tv_car_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:text="京DJ1234" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_not_authentication1"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FF0C7955"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_not_authentication2"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FF0C7955"
+                    android:textSize="10sp" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/arrears"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_ExpenseDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="未完成"
+                android:textColor="#29c086"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/vv_ExpenseDetail"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#29c08b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_Rechargedetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/vv_Rechargedetail"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e7e7e7" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_MviewPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

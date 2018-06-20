@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/jinru" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bcbcbc" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/bg_logo"
+            android:layout_marginTop="66dp"/>
+        <TextView
+            android:id="@+id/tv_vercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邯郸泊车"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="#333"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="70dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_Feedback"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/selector_settings"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="16dp"
+            android:text="客服电话"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_quanguokefu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="400-055-5886（邯郸）"
+                android:textColor="#999"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tv_quanguokefu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:text="400-810-6188（全国）"
+                android:textColor="#999"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_AboutOurs"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_settings"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="官方网站"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="www.jaya.cc"
+            android:textColor="#999"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版权所有 Copyright "
+                android:textSize="8sp"
+                android:textColor="#777" />
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@mipmap/bg_tupian"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2015-2017 Ecaray.All Rights Reserved"
+                android:textSize="8sp"
+                android:textColor="#777" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京精英路通科技有限公司"
+            android:layout_above="@id/tv_text"
+            android:layout_centerHorizontal="true"
+            android:textSize="13sp"
+            android:textColor="#333"
+            android:layout_marginBottom="3.5dp"/>
+    </RelativeLayout>
+</LinearLayout>

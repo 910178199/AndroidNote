@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.handanlutong.parking">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- OpenGLES 2.0 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="cn.handanlutong.parking.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!--读取系统设置的数据库(launcher.db)的权限-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="cn.handanlutong.parking.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!--在SD卡中创建与删除文件权限-->
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <!--拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:name="cn.handanlutong.parking.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar"> <!--适配18:9的屏幕-->
+
+        <activity
+            android:name="cn.handanlutong.parking.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.FaPiaoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.FaPiaoADDActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.FaPiaoHistoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.FaPiaoMoreMessageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyCarInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.GuideActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MonthCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.BuyMonthCardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MessageSystemActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.NeedHelpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyNewsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyBurseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.RechargeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyRecordDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyRecordDetailCompleteActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.TingcheJiLuActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.TransactionDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.MyCarActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.CarVehiclecardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.AddCarActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.PersonnalInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.SettingsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.EventReminderActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.UserProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.BillRecordActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.BillDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.EditNikeNameActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.UpdateUserPhoneNumActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.UpdateUserNewPhoneNumActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.PayComplateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.ActionListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.SYhelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.YiJianActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.YouHuiJuanActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.LQcomplateActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.OrderPayActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="cn.handanlutong.parking.activity.baidu.IndoorLocationActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="cn.handanlutong.parking.activity.baidu.CarPlaceItemActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.baidu.DiTuActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.handanlutong.parking.activity.baidu.SerchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="cn.handanlutong.parking.apshare.ShareMenuActivity"></activity>
+
+        <!-- 百度地图的传感器  需要配置的 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"></action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="cWgXoX7vN3C327X8bb5kB4RdA2eQEKNp" />
+
+        <!--支付宝相关配置-->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name="cn.handanlutong.parking.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!--极光推送-->
+        <receiver
+            android:name="cn.handanlutong.parking.receive.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="cn.handanlutong.parking" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="b7f65b661bd132dc69fc4727" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+        <!--友盟分享-->
+        <!--微信-->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--QQ精简版-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106242822" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".DemoGuideActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a0aaee08f4a9d29fc00001c"></meta-data>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" /> <!--设置最大高宽比为 2.1 用来适配来适配18：9的全面屏-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.handanlutong.parking.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+</manifest>

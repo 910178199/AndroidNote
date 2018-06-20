@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#fff">
+        <TextView
+            android:id="@+id/tv_clear_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="清空全部历史记录"
+            android:textColor="#888"
+            android:textSize="14sp" />
+        <View
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            style="@style/divider_style"/>
+    </RelativeLayout>
+</LinearLayout>

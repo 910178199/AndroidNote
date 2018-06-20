@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--钱包充值选择金额时的边框-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置一个灰色边框 -->
+    <stroke android:color="#686868" android:width="2px"/>
+    <corners android:radius="6dp" />
+    <solid android:color="#e1e1e1" />
+
+</shape>

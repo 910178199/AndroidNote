@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_item_mycar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_mycar_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/mycar_item_icon" />
+
+            <TextView
+                android:id="@+id/tv_listCarNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_mycar_yueka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/mycar_item_yueka"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_mycar_moren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/mycar_item_moren"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_next_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/next" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_mycar_shenhe_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="车辆认证审核中，不影响您享受停车服务"
+            android:textColor="#777"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:id="@+id/tv_mycar_zong_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="50dp"
+            android:text="审核时间需要1-2个工作日，请耐心等待。
+客服妹子将竭诚为您服务：400-810-6188"
+            android:textColor="#999"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

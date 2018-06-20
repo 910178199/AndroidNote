@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'qdq123456'
+            keyPassword '123456'
+            storeFile file('D:/wangwei.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "cn.handanlutong.parking"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2200
+        versionName "2.2.00"
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "b7f65b661bd132dc69fc4727", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':onsdk_all')
+    implementation project(':NaviTts')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/alipaySdk-20170407.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation 'cn.jiguang:jpush:2.1.8'
+    implementation 'com.facebook.fresco:fresco:1.3.0'
+    implementation 'me.relex:photodraweeview:1.1.2'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation project(':pullToRefreshLibrary')
+}

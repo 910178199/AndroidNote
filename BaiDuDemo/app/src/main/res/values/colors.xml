@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menu_bg_press">#EDEDED</color>
+    <color name="parking_hava_pay">#37bdbe</color>
+    <color name="parking_not_pay">#333333</color>
+    <color name="del_may_car">#ff3737</color>
+    <color name="popwindow_header">#d1d1d1</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="wxnavpage">#FFE1E8EB</color>
+
+    <color name="bg_light_gray">#F5F5F5</color>
+    <color name="bg_blue">#31cedd</color>
+    <color name="bg_blue_pay">#29c08b</color>
+
+
+    <color name="umeng_blue">#0086DC</color>
+    <color name="umeng_background">#D4E0E5</color>
+    <color name="umeng_text_color">#575A5C</color>
+    <color name="umeng_divide">#C3C6C9</color>
+
+    <color name="transparent">@android:color/transparent</color>
+
+</resources>

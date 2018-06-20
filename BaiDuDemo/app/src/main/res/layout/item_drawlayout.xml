@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:background="#ffffff">
+    <cn.handanlutong.parking.customview.CircleImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        android:layout_alignBottom="@+id/tv_UserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        app:border_color="#175981"
+        app:border_width="2dp" />
+    <TextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/line2"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="张小娴"
+        android:textSize="15sp"
+        android:textColor="#333333"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e7e7e7"/>
+    </RelativeLayout>
+</LinearLayout>

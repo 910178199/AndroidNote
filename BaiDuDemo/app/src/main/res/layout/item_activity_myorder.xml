@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:id="@+id/iv_yueka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="71dp"
+            android:src="@mipmap/iv_yueka"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_Stop_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_circle_myorder"
+            android:gravity="center"
+            android:text="11.27"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ParkingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/tv_Stop_Date">
+
+            <TextView
+                android:id="@+id/tv_ParkingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邯郸宾馆停车场"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_totalFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="￥4.00"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_owe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_totalFee"
+                android:layout_toStartOf="@+id/tv_totalFee"
+                android:src="@mipmap/img_voucher"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_Bill_Dration_Fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_ParkingName"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/tv_Stop_Date">
+
+            <TextView
+                android:id="@+id/tv_new_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入场时间 08:34:56"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_Duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_new_time"
+                android:text="停车时长 01:52:12"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_new_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="未支付"
+                android:textColor="#e62121"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_Stop_Date"
+            android:background="#e7e7e7" />
+    </RelativeLayout>
+</RelativeLayout>

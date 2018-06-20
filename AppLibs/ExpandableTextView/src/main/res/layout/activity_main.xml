@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/SwipeMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="侧滑菜单" />
+
+    <Button
+        android:id="@+id/AllSelectOrNoSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/SwipeMenu"
+        android:text="全选/反选" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

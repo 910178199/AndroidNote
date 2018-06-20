@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">邯郸泊车</string>
+
+
+    <string name="umeng_update_content">版本号：6.4.5\n1.更新了QQ精简版与完整版支持轻聊\n2.更新了新浪SDK，修复了授权在部分rom上不能唤起客户端的bug\n3.有道云笔记更新为官方SDK</string>
+    <string name="umeng_home_title">U-Share产品Demo</string>
+    <string name="umeng_home_update">新版更新内容</string>
+    <string name="umeng_share_title">分享</string>
+    <string name="umeng_auth_title">授权</string>
+    <string name="umeng_delauth_title">删除授权</string>
+    <string name="umeng_getinfo_title">获取用户信息</string>
+    <string name="umeng_check_title">自检工具</string>
+    <string name="umeng_menu_title">分享菜单模板</string>
+
+    <string name="umeng_check_sign">检查签名</string>
+    <string name="umeng_check_sina">检查新浪</string>
+    <string name="umeng_check_wx">检查微信</string>
+    <string name="umeng_check_alipay">检查支付宝</string>
+    <string name="umeng_check_qq">检查qq</string>
+    <string name="umeng_check_fb">检查facebook</string>
+    <string name="umeng_check_vk">vkontakte</string>
+    <string name="umeng_choose_style">选择分享类型</string>
+
+    <string name="umeng_sharebutton_copy">复制文本</string>
+    <string name="umeng_sharebutton_copyurl">复制连接</string>
+    <string name="fapiao">发票说明：\n
+     \t\t1.您申请的是增值税电子普通发票。根据国家税务总局公告2015年第84号的规定，增值税电子普通发票的法律效力、基本用途、使用规定等，与税务机关监制的增值税普通发票纸质版相同。如需纸质报销，可将电子文档打印即可；\n
+     \t\t2.电子发票将在您提交申请后24小时内发送到您指定的邮箱（如逾期未收到，可以致电客服询问，我们将在72小时内尽快为您处理）；\n
+     \t\t3.申请开票后的30天内无法再次提交发票申请（申请审核未通过仍可再次提交）；\n
+     \t\t4.以优惠券或充值赠送金额支付的停车费，不能开具发票；\n
+     \t\t5.在停车管理员处使用现金或扫码支付停车费的用户，可向停车场管理员索要定额手撕发票。\n
+    </string>
+    <string name="update_phone">
+        • 更换手机号后，当前的账户信息及享有的权益均将保持不变\n
+        • 更换成功后请使用新手机号进行登录\n
+        • 只支持修改为系统内未激活的手机号\n
+        • 30天内只能修改一次手机号
+    </string>
+</resources>
