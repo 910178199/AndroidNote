@@ -199,7 +199,6 @@ public class DialogHelper {
             layoutParams.height = screenWidthHeight[1];
             layoutParams.gravity = Gravity.CENTER;
         }
-//        dialogWindow.setAttributes(layoutParams);
         return appCompatDialog;
     }
 }

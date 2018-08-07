@@ -17,14 +17,28 @@
         android:layout_toRightOf="@+id/SwipeMenu"
         android:text="全选/反选" />
 
+    <Button
+        android:id="@+id/ShiJianZhou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/AllSelectOrNoSelect"
+        android:text="时间轴" />
+
+    <Button
+        android:id="@+id/RvScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ShiJianZhou"
+        android:text="RV滚动" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
-
-
 
 
 </RelativeLayout>

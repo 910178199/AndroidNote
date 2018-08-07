@@ -32,7 +32,13 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api 'androidx.core:core-ktx:0.3'
 
+    //Android崩溃拦截日志
     implementation 'com.github.910178199:CrashInterception:v1.0'
+
+    //leakcanary内存泄漏检测
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.3.1' // or 1.4-beta1
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1' // or 1.4-beta1
+    testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1' // or 1.4-beta1
 }
 repositories {
     mavenCentral()

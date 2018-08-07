@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".SwipeMenuActivity" />
         <activity android:name=".AllSelectOrNoSelectActivity" />
+        <activity android:name=".shijianzhou.TraceActivity" />
+        <activity android:name=".diffListViewItem.DiffListView" />
     </application>
 
 </manifest>

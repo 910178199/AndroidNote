@@ -11,6 +11,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.superman.expandabletextview.ThreadPoolTest.ThreadPoolMain;
+import com.example.superman.expandabletextview.shijianzhou.TraceActivity;
 import com.example.superman.expandabletextview.ui.DialogHelper;
 
 import java.util.ArrayList;
@@ -25,18 +27,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ArrayList<DataBean> models;
     private Button swipeMenu;
     private Button allSelectOrNoSelect;
+    private Button shiJianZhou;
+    private Button rvScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        View viewById = findViewById(R.id.ad);
-        viewById.setVisibility(View.VISIBLE);
 
         swipeMenu = findViewById(R.id.SwipeMenu);
         allSelectOrNoSelect = findViewById(R.id.AllSelectOrNoSelect);
+        shiJianZhou = findViewById(R.id.ShiJianZhou);
+        rvScroll = findViewById(R.id.RvScroll);
         swipeMenu.setOnClickListener(this);
         allSelectOrNoSelect.setOnClickListener(this);
+        shiJianZhou.setOnClickListener(this);
+        rvScroll.setOnClickListener(this);
 
         //新闻列表展开收起
         initExpandData();
@@ -58,6 +64,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
         adDialog.show();
+
+        /**
+         * 线程的使用
+         */
+
+//        ThreadPoolMain.testNewCachedThreadPool();
+
+//        ThreadPoolMain.testNewFixedThreadPool();
+
+//        ThreadPoolMain.testNewSingleThreadExecutor();
+
+        ThreadPoolMain.testNewScheduledThreadPool();
     }
 
     private void initExpandData() {
@@ -87,6 +105,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.AllSelectOrNoSelect:
                 //全选反选
                 startActivity(new Intent(this, AllSelectOrNoSelectActivity.class));
+                break;
+            case R.id.ShiJianZhou:
+                //时间轴
+                startActivity(new Intent(this, TraceActivity.class));
+                break;
+            case R.id.RvScroll:
+                //RV滚动
+                main_rv.smoothScrollToPosition(0);
                 break;
         }
     }
